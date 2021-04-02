@@ -1,7 +1,5 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
-var antibot = require("./TwitchBot/BotChecker");
-var antibot = new antibot();
 
 function createWindow () {
     const win = new BrowserWindow({

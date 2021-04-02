@@ -14,7 +14,23 @@ class BotChecker {
                 tags: tags,
                 message: message
             };
-            document.getElementById("asd").innerHTML = message;
+
+            var line = document.createElement("div");
+            line.setAttribute("class", "line")
+            document.getElementById("chat").appendChild(line);
+            var name = document.createElement("div");
+            name.setAttribute("class", "name");
+            name.setAttribute("style", `color: ${log.tags.color ? log.tags.color : randomColor()}`)
+            line.appendChild(name);
+            var message = document.createElement("div");
+            message.setAttribute("class", "message");
+            line.appendChild(message);
+            name.appendChild(document.createTextNode(`${log.tags["display-name"]}: `));
+            message.appendChild(document.createTextNode(`${log.message}`));
+
+            var chat = document.getElementById('chat');
+            chat.scrollTop = chat.scrollHeight;
+
             // Ignore echoed messages.
             if (self) return;
             if (this.bots.find(bot => bot[0] === tags.username) && !this.allowed.find(bot => bot === tags.username)) {
@@ -34,4 +50,8 @@ class BotChecker {
             }
         });
     }
+}
+
+function randomColor() {
+    return `rgb(${Math.random() * (256 - 128) + 128}, ${Math.random() * (256 - 128) + 128}, ${Math.random() * (256 - 128) + 128})`;
 }

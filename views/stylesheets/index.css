@@ -1,0 +1,37 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: black;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  .name {
+    display: inline;
+  }
+  
+  .message {
+    display: inline;
+    color: #eeeef0;
+  }
+  
+  .line {
+    margin-bottom: 10px;
+  }
+  
+  #chat {
+    height: 600px;
+    width: 300px;
+    overflow-y: auto;
+    /*background-color: #18181b;*/
+  }
+  #chat::-webkit-scrollbar {
+    display: none;
+  }
+  #chat {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  

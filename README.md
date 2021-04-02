@@ -34,15 +34,43 @@ Twitch bot which will ban all bots registered in: https://twitchinsights.net/bot
 
 4. **Open bot config file**
 <pre>
-twitchAntiBot-1.0/views/javascripts/CONFIG.js
+twitchAntiBot-1.0/resources/app/views/javascripts/CONFIG.js
 </pre>
 
 5. **Fill the fields with your information**
 <pre>
+    Maybe you are already using a useful and harmless bot as streamlabs or nightbot. It could be detected as a bot and banned for that reason.
+    To avoid that, you will need to add it username in the following file. By default, there is my own bot and streamlabs as exceptions. Add as
+    many exceptions as you want to that list separated by a comma and the username with double quotes. All fields but the oauth token in lower case.
 var CONFIG = {
     // enviroment
     TWITCH_USERNAME: "<i><b>New account username</i></b>",
     TWITCH_OAUTH_TOKEN: "<i><b>New account oauth token</i></b>",
-    TWITCH_CHANNEL: "<i><b>Your twitch channel</i></b>"
+    TWITCH_CHANNEL: "<i><b>Your twitch channel</i></b>",
+    BOTS_EXCEPTIONS: ["<i><b>New account username</i></b>","<i><b>streamlabs</i></b>","<i><b>nightbot</i></b>"]
 }
 </pre>
+
+6. **Add some exceptions to your anti bot**
+<pre>
+    Maybe you are already using a useful and harmless bot as streamlabs or nightbot. It could be detected as a bot and banned for that reason.
+    To avoid that, you will need to add it username in the following file. By default, there is my own bot and streamlabs as exceptions. Add as
+    many exceptions as you want to that list separated by a comma and the username with double quotes.
+    
+    twitchAntiBot-1.0/resources/app/views/javascripts/BotChecker.js
+</pre>
+
+7. **Run twitchantibot.exe**
+<pre>
+    twitchAntiBot-1.0/twitchantibot.exe
+</pre>
+
+## What is happening and what are you watching
+> Chat log: all the messages of your chat even after deletion.
+
+> Now your new account is moderating the chat and if it detects a bot, it will ban it automatically.
+
+> To disconnect the bot, just close the aplication.
+
+## What can you modify and customize
+Everything! The code is completly open and not even minified, so directly from the program folder you can go to twitchAntiBot-1.0/resources/app/views and modify whatever you want. Notice that you will need to know about html, js and css for that.

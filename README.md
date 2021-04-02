@@ -14,7 +14,7 @@ Twitch bot which will ban all bots registered in: https://twitchinsights.net/bot
 1. **Download the bot**
 
 <pre>
-<a href="https://github.com/Huma88/twitchAntiBot/releases/download/v1.0/twitchantibot-win32-x64.rar">releases twitchantibot v1.0</a>
+<a href="https://github.com/Huma88/twitchAntiBot/releases/download/v1.0/twitchantibot-win32-x64.zip">releases twitchantibot v1.0</a>
 </pre>
 
 2. **Create a new twitch account**

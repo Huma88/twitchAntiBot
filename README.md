@@ -66,3 +66,6 @@ var CONFIG = {
 
 ## What can you modify and customize
 Everything! The code is completly open and not even minified, so directly from the program folder you can go to twitchAntiBot-1.0/resources/app/views and modify whatever you want. Notice that you will need to know about html, js and css for that.
+
+## A little bit of spam won't hurt anybody right? ;)
+if you find this useful, consider following me on: https://www.twitch.tv/huma88.

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script src="./javascripts/tmi.min.js"></script>
+    <script src="./javascripts/CONFIG.js"></script>
+    <script src="./javascripts/TwitchBot.js"></script>
+    <script src="./javascripts/BotChecker.js"></script>
+    <script src="./javascripts/index.js"></script>
 </head>
-<body style="background: white;">
+
+<body id="asd" style="background: white;" onload="setup()">
     <h1>Hello World!</h1>
     <p>
         We are using Node.js <span id="node-version"></span>,
@@ -13,4 +20,5 @@
         and Electron <span id="electron-version"></span>.
     </p>
 </body>
+
 </html>

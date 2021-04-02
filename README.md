@@ -38,6 +38,7 @@ twitchAntiBot-1.0/resources/app/views/javascripts/CONFIG.js
 </pre>
 
 5. **Fill the fields with your information**
+
 Maybe you are already using a useful and harmless bot as streamlabs or nightbot. It could be detected as a bot and banned for that reason.
 To avoid that, you will need to add it username in the following file. By default, there is my own bot and streamlabs as exceptions. Add as
 many exceptions as you want to that list separated by a comma and the username with double quotes. All fields but the oauth token in lower case.

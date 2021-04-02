@@ -3,7 +3,7 @@ class BotChecker {
     constructor() {
         var twitchBot = new TwitchBot(CONFIG.TWITCH_USERNAME, CONFIG.TWITCH_OAUTH_TOKEN, "Huma88");
         this.bots = [];
-        this.allowed = ["streamlabs", "Huma88_bot"];
+        this.allowed = CONFIG.BOT_EXCEPTIONS;
         fetch("https://api.twitchinsights.net/v1/bots/all")
             .then(response => response.json())
             .then(data => this.bots = data.bots);

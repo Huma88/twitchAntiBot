@@ -5,5 +5,5 @@ var CONFIG = {
     TWITCH_USERNAME: "",
     TWITCH_OAUTH_TOKEN: "",
     TWITCH_CHANNEL: "",
-    BOT_EXCEPTIONS: "",
+    BOT_EXCEPTIONS: ["Huma88_bot","streamlabs"],
 }

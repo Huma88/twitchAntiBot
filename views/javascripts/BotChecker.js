@@ -1,7 +1,7 @@
 
 class BotChecker {
     constructor() {
-        var twitchBot = new TwitchBot(CONFIG.TWITCH_USERNAME, CONFIG.TWITCH_OAUTH_TOKEN, "Huma88");
+        var twitchBot = new TwitchBot(CONFIG.TWITCH_USERNAME, CONFIG.TWITCH_OAUTH_TOKEN, CONFIG.TWITCH_CHANNEL);
         this.bots = [];
         this.allowed = CONFIG.BOT_EXCEPTIONS;
         fetch("https://api.twitchinsights.net/v1/bots/all")

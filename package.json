@@ -1,19 +1,58 @@
 {
-  "name": "twitchbot",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "name": "twitchantibot",
+  "version": "1.0.0",
+  "description": "A twitch bot to ban all bots registered in: https://twitchinsights.net/bots",
+  "main": "main.js",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
+    "cacheable-request": "^6.1.0",
+    "clone-response": "^1.0.2",
+    "decompress-response": "^3.3.0",
+    "debug": "^2.6.9",
+    "defer-to-connect": "^1.1.3",
+    "duplexer3": "^0.1.4",
+    "electron": "^12.0.2",
+    "encodeurl": "^1.0.2",
+    "end-of-stream": "^1.4.4",
+    "fsevents": "^2.3.2",
+    "get-stream": "^4.1.0",
+    "got": "^9.6.0",
+    "graceful-fs": "^4.2.6",
+    "inherits": "^2.0.3",
+    "ini": "^1.3.7",
+    "json-buffer": "^3.0.0",
+    "http-cache-semantics": "^4.1.0",
+    "keyv": "^3.1.0",
+    "lowercase-keys": "^1.0.1",
+    "mimic-response": "^1.0.1",
+    "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.7",
-    "tmi.js": "^1.7.2"
-  }
+    "normalize-url": "^4.5.0",
+    "ms": "^2.0.0",
+    "p-cancelable": "^1.1.0",
+    "once": "^1.4.0",
+    "prepend-http": "^2.0.0",
+    "pump": "^3.0.0",
+    "responselike": "^1.0.2",
+    "safe-buffer": "^5.1.2",
+    "tmi.js": "^1.7.2",
+    "to-readable-stream": "^1.0.0",
+    "url-parse-lax": "^3.0.0",
+    "wrappy": "^1.0.2",
+    "ws": "^7.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huma88/twitchAntiBot.git"
+  },
+  "author": "Huma88",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Huma88/twitchAntiBot/issues"
+  },
+  "homepage": "https://github.com/Huma88/twitchAntiBot#readme"
 }

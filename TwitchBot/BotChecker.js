@@ -1,7 +1,6 @@
-var TwitchBot = require("../../TwitchBot");
+var TwitchBot = require("./TwitchBot");
 const fetch = require("node-fetch");
-const CONFIG = require("../../bin/CONFIG");
-const { TWITCH_OAUTH_TOKEN } = require("../../bin/CONFIG");
+const CONFIG = require("./CONFIG");
 
 class BotChecker {
     constructor() {

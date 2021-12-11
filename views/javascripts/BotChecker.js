@@ -2,6 +2,11 @@
 class BotChecker {
     constructor() {
         var twitchBot = new TwitchBot(CONFIG.TWITCH_USERNAME, CONFIG.TWITCH_OAUTH_TOKEN, CONFIG.TWITCH_CHANNEL);
+        var message_alert = null;
+        if (CONFIG.MESSAGE_SOUND.NAME != null && CONFIG.MESSAGE_SOUND.NAME.length > 0) {
+            message_alert = new Audio(`../assets/sound/${CONFIG.MESSAGE_SOUND.NAME}`);
+            message_alert.volume = CONFIG.MESSAGE_SOUND.VOLUME;
+        }
         this.bots = [];
         this.allowed = CONFIG.BOT_EXCEPTIONS;
         fetch("https://api.twitchinsights.net/v1/bots/all")
@@ -9,6 +14,9 @@ class BotChecker {
             .then(data => this.bots = data.bots);
         twitchBot.tmiClient.connect().catch(console.error);
         twitchBot.tmiClient.on('message', (channel, tags, message, self) => {
+            if (message_alert != null) {
+                message_alert.play();
+            }
             var log = {
                 channel: channel,
                 tags: tags,

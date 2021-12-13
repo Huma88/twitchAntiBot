@@ -48,7 +48,11 @@ var CONFIG = {
     TWITCH_USERNAME: "<i><b>New account username</i></b>",
     TWITCH_OAUTH_TOKEN: "<i><b>New account oauth token</i></b>",
     TWITCH_CHANNEL: "<i><b>Your twitch channel</i></b>",
-    BOTS_EXCEPTIONS: ["<i><b>New account username</i></b>","<i><b>streamlabs</i></b>","<i><b>nightbot</i></b>"]
+    BOTS_EXCEPTIONS: ["<i><b>New account username</i></b>","<i><b>streamlabs</i></b>","<i><b>nightbot</i></b>"],
+    MESSAGE_SOUND: {
+        NAME: "<i><b>message alert.mp3</i></b>",
+        VOLUME: <i><b>1</i></b>
+    },
 }
 </pre>
 

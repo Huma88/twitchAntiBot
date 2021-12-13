@@ -34,7 +34,7 @@ Twitch bot which will ban all bots registered in: https://twitchinsights.net/bot
 
 4. **Open bot config file**
 <pre>
-twitchAntiBot-1.0/resources/app/views/javascripts/CONFIG.js
+twitchAntiBot-1.0/resources/app/CONFIG.js
 </pre>
 
 5. **Fill the fields with your information**
@@ -42,6 +42,10 @@ twitchAntiBot-1.0/resources/app/views/javascripts/CONFIG.js
 Maybe you are already using a useful and harmless bot as streamlabs or nightbot. It could be detected as a bot and banned for that reason.
 To avoid that, you will need to add it username in the following file. By default, there is my own bot and streamlabs as exceptions. Add as
 many exceptions as you want to that list separated by a comma and the username with double quotes. All fields but the oauth token in lower case.
+
+You can also set a message sound, to configure it, place the sound file into twitchAntiBot-1.0/resources/app/assets/sound and place the name in config file.
+Volume is a value between 0 and 1.
+If you don't want to use this feature, just leave "NAME" with empty quotes: "".
 <pre>
 var CONFIG = {
     // enviroment
